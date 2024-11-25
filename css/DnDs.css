@@ -1,0 +1,377 @@
+nav {
+    background-color: #3a3a3a; /* Темно-серый фон навигации */
+    color: #d1d1d1; /* Светло-серый текст */
+    font-family: Arial, sans-serif;
+    width: 250px; /* Ширина меню */
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box; /* Учитывать padding в размере меню */
+}
+
+.left_menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item_level_1 {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.item_link_1, .item_link_2 {
+    text-decoration: none;
+    color: #d1d1d1; /* Светло-серый цвет текста */
+    display: flex;
+    align-items: center;
+    padding: 10px 10px; /* Ограничиваем высоту клика */
+    background-color: #4f4f4f; /* Средне-серый фон кнопок */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box; /* Учитывать padding */
+    position: relative;
+}
+
+.item_link_1:hover, .item_link_2:hover {
+    background-color: #6c6c6c; /* Серый цвет при наведении */
+    color: #ffffff; /* Белый текст при наведении */
+}
+
+.item_text {
+    flex-grow: 1; /* Расширение текста, чтобы он оставался слева */
+    margin-left: 20px; /* Отступ от иконки */
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.svg {
+    width: 20px;  /* Устанавливаем ширину иконки */
+    height: 20px;  /* Устанавливаем высоту иконки */
+    margin-right: 10px;  /* Добавляем небольшой отступ справа от иконки */
+}
+
+.dropdown-list {
+    display: none; /* Скрыто по умолчанию */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #3a3a3a; /* Фон подменю */
+    border-radius: 5px; /* Закругленные углы */
+    overflow: hidden; /* Убираем лишние области */
+}
+
+.dropdown-list .item_level_2 {
+    margin: 5px 0;
+}
+
+.dropdown-list .item_link_2 {
+    padding: 8px 10px; /* Сужаем область клика */
+    background-color: #4a4a4a; /* Темно-серый фон подменю */
+    border-radius: 5px;
+    width: calc(100% - 20px); /* Учитываем отступы */
+    box-sizing: border-box;
+}
+
+.item_link_1.active + .dropdown-list {
+    display: block; /* Показывать подменю, если активное */
+}
+
+.svg {
+    font-size: 0!important;
+    display: inline-block;
+    margin: 1px 2px 0
+}
+
+.svg svg {
+    fill: inherit;
+    transition: fill .15s
+}
+
+.svg.svg-8 {
+    width: 8px;
+    height: 8px
+}
+
+.svg.svg-8 svg {
+    width: 8px;
+    height: 8px
+}
+
+.svg.svg-10 {
+    width: 10px;
+    height: 10px
+}
+
+.svg.svg-10 svg {
+    width: 10px;
+    height: 10px
+}
+
+.svg.svg-12 {
+    width: 12px;
+    height: 12px
+}
+
+.svg.svg-12 svg {
+    width: 12px;
+    height: 12px
+}
+
+.svg.svg-14 {
+    width: 14px;
+    height: 14px
+}
+
+.svg.svg-14 svg {
+    width: 14px;
+    height: 14px
+}
+
+.svg.svg-16 {
+    width: 16px;
+    height: 16px
+}
+
+.svg.svg-16 svg {
+    width: 16px;
+    height: 16px
+}
+
+.svg.svg-18 {
+    width: 18px;
+    height: 18px
+}
+
+.svg.svg-18 svg {
+    width: 18px;
+    height: 18px
+}
+
+.svg.svg-20 {
+    width: 20px;
+    height: 20px
+}
+
+.svg.svg-20 svg {
+    width: 20px;
+    height: 20px
+}
+
+.svg.svg-22 {
+    width: 22px;
+    height: 22px
+}
+
+.svg.svg-22 svg {
+    width: 22px;
+    height: 22px
+}
+
+.svg.svg-24 {
+    width: 24px;
+    height: 24px
+}
+
+.svg.svg-24 svg {
+    width: 24px;
+    height: 24px
+}
+
+.svg.svg-26 {
+    width: 26px;
+    height: 26px
+}
+
+.svg.svg-26 svg {
+    width: 26px;
+    height: 26px
+}
+
+.svg.svg-28 {
+    width: 28px;
+    height: 28px
+}
+
+.svg.svg-28 svg {
+    width: 28px;
+    height: 28px
+}
+
+.svg.svg-30 {
+    width: 30px;
+    height: 30px
+}
+
+.svg.svg-30 svg {
+    width: 30px;
+    height: 30px
+}
+
+.svg.svg-32 {
+    width: 32px;
+    height: 32px
+}
+
+.svg.svg-32 svg {
+    width: 32px;
+    height: 32px
+}
+
+.svg.svg-34 {
+    width: 34px;
+    height: 34px
+}
+
+.svg.svg-34 svg {
+    width: 34px;
+    height: 34px
+}
+
+.svg.svg-36 {
+    width: 36px;
+    height: 36px
+}
+
+.svg.svg-36 svg {
+    width: 36px;
+    height: 36px
+}
+
+.svg.svg-38 {
+    width: 38px;
+    height: 38px
+}
+
+.svg.svg-38 svg {
+    width: 38px;
+    height: 38px
+}
+
+.svg.svg-40 {
+    width: 40px;
+    height: 40px
+}
+
+.svg.svg-40 svg {
+    width: 40px;
+    height: 40px
+}
+
+.svg.svg-42 {
+    width: 42px;
+    height: 42px
+}
+
+.svg.svg-42 svg {
+    width: 42px;
+    height: 42px
+}
+
+.svg.svg-44 {
+    width: 44px;
+    height: 44px
+}
+
+.svg.svg-44 svg {
+    width: 44px;
+    height: 44px
+}
+
+.svg.svg-46 {
+    width: 46px;
+    height: 46px
+}
+
+.svg.svg-46 svg {
+    width: 46px;
+    height: 46px
+}
+
+.svg.svg-48 {
+    width: 48px;
+    height: 48px
+}
+
+.svg.svg-48 svg {
+    width: 48px;
+    height: 48px
+}
+
+.svg.svg-50 {
+    width: 50px;
+    height: 50px
+}
+
+.svg.svg-50 svg {
+    width: 50px;
+    height: 50px
+}
+
+.svg.svg-52 {
+    width: 52px;
+    height: 52px
+}
+
+.svg.svg-52 svg {
+    width: 52px;
+    height: 52px
+}
+
+.svg.svg-54 {
+    width: 54px;
+    height: 54px
+}
+
+.svg.svg-54 svg {
+    width: 54px;
+    height: 54px
+}
+
+.svg.svg-56 {
+    width: 56px;
+    height: 56px
+}
+
+.svg.svg-56 svg {
+    width: 56px;
+    height: 56px
+}
+
+.svg.svg-58 {
+    width: 58px;
+    height: 58px
+}
+
+.svg.svg-58 svg {
+    width: 58px;
+    height: 58px
+}
+
+.svg.svg-60 {
+    width: 60px;
+    height: 60px
+}
+
+.svg.svg-60 svg {
+    width: 60px;
+    height: 60px
+}
+
+.svg.svg-62 {
+    width: 62px;
+    height: 62px
+}
+
+.svg.svg-62 svg {
+    width: 62px;
+    height: 62px
+}
+
+.svg.svg-64 {
+    width: 64px;
+    height: 64px
+}
+
+.svg.svg-64 svg {
+    width: 64px;
+    height: 64px
+}

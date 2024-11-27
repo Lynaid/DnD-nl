@@ -3,7 +3,8 @@ body {
     font-size: 15px;
     line-height: 1.4;
     font-weight: 400;
-    color: var(--color-text-main)
+    color: var(--color-text-main);
+    color: var(--image-bg-page);
 }
 a {
     text-decoration: none;
@@ -49,7 +50,7 @@ a {
     --color-shadow-1: rgba(20, 20, 20, 0.05);
     --color-bg-page: #2a2928;
     --color-bg-page-gradient: rgba(42, 41, 40, 0.9);
-    --image-bg-page: url("dndnl\images\bg_dark_.png");
+    --image-bg-page: url("C:\Users\Mkopy\Documents\dndnl\images\bg_dark_.png");
     --color-bg-1: #141414;
     --color-bg-2: #212121;
     --color-bg-3: #262626;
@@ -361,6 +362,48 @@ header {
 .header .header-page_title .page-item {
     font-weight: 700
 }
+footer {
+    position: relative;
+    z-index: 3;
+    padding: 8px 0;
+    background-color: var(--color-bg-2);
+    border-top: 1px solid var(--color-border-1);
+    text-align: center;
+    color: var(--color-text-1)
+}
+
+footer a {
+    color: inherit;
+    transition: all .15s
+}
+
+footer a.show-email {
+    border-bottom: 1px dashed var(--color-link-1)
+}
+
+footer a:hover {
+    color: var(--color-link-1-hover);
+    border-color: var(--color-link-1-hover)
+}
+.cont {
+    align-self: auto
+}
+
+.cont {
+    order: 0;
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 1596px;
+    margin: 0 auto;
+    padding: 0 8px
+}
+.cont {
+    background-color:var(--block-background-dark);
+}
 nav {
     color: #d1d1d1; /* Светло-серый текст */
     font-family: Arial, sans-serif;
@@ -450,6 +493,102 @@ nav {
 
 .item_link_1.active + .dropdown-list {
     display: block; /* Показывать подменю, если активное */
+}
+
+body {
+    background-color: var(--color-bg-page)
+}
+
+body.overflowed {
+    overflow: hidden;
+    height: 100vh
+}
+
+body:before {
+    content: "";
+    display: block;
+    background-color: var(--color-bg-page);
+    background-image: var(--image-bg-page);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%
+}
+
+body:after {
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent 0,var(--color-bg-page-gradient) 9%,var(--color-bg-page-gradient) 91%,transparent 100%)
+}
+
+@media (max-width: 992px) {
+    body {
+        padding-top:41px
+    }
+
+    body:after,body:before {
+        display: none
+    }
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#search-form {
+    display: flex;
+    align-items: center;
+    background-color: #4f4f4f;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 100%;
+    max-width: 250px;
+    box-sizing: border-box;
+}
+
+#search-input {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    color: #d1d1d1;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-right: 5px;
+}
+
+#search-input::placeholder {
+    color: #a1a1a1;
+}
+
+#search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#search-button .svg {
+    width: 16px;
+    height: 16px;
+    fill: #d1d1d1;
+    transition: fill 0.3s ease;
+}
+
+#search-button:hover .svg {
+    fill: #ffffff;
 }
 
 .svg {

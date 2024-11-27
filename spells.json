@@ -1,0 +1,62 @@
+[{
+    "name": "Schaduwstorm",
+    "description": "Ontketent een woedende storm van donkere energie die vijanden verblindt en verwondt.",
+    "link": "#"
+  },
+  {
+    "name": "IJzige Grijp",
+    "description": "Bevries de vijand en vertraag hun beweging met een magische ijzeren greep.",
+    "link": "#"
+  },
+  {
+    "name": "Helende Waas",
+    "description": "Een mystieke nevel die langzaam bondgenoten geneest binnen een bereik.",
+    "link": "#"
+  },
+  {
+    "name": "Steenpantser",
+    "description": "Geeft je een versterkte verdediging, waardoor vijandelijke aanvallen minder effectief zijn.",
+    "link": "#"
+  },
+  {
+    "name": "Bliksemschicht",
+    "description": "Werp een directe bliksemschicht om vijanden te verlammen.",
+    "link": "#"
+  },
+  {
+    "name": "Druïdenwortel",
+    "description": "Roept magische wortels op die vijanden immobiliseren.",
+    "link": "#"
+  },
+  {
+    "name": "Illusieveld",
+    "description": "Verberg jezelf en bondgenoten tijdelijk door een optisch bedrog te creëren.",
+    "link": "#"
+  },
+  {
+    "name": "Vlamring",
+    "description": "Vorm een cirkel van vuur om je heen, die vijanden verbrandt als ze dichtbij komen.",
+    "link": "#"
+  },
+  {
+    "name": "Bloedbinding",
+    "description": "Leent kracht van een vijand in ruil voor je eigen gezondheid.",
+    "link": "#"
+  },
+  {
+    "name": "Elementale Golf",
+    "description": "Een golf van gemengde energieën (vuur, water, lucht, aarde) raakt meerdere vijanden tegelijk.",
+    "link": "#"
+  },
+    {
+        "name": "Vlammen Werpen",
+        "description": "Richt een krachtige vlamstraal die vijanden verbrandt.",
+        "link": "#"
+    },
+    {
+        "name": "Helende Lichtstraal",
+        "description": "Herstelt gezondheid van een bondgenoot in nood.",
+        "link": "#"
+    }
+    
+]

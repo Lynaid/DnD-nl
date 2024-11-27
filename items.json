@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Zwaard van Licht",
+        "description": "Een zwaard met een onzichtbare kracht die licht uitstraalt.",
+        "link": "#zwaard-licht-details"
+    },
+    {
+        "name": "Kappen van Schaduwen",
+        "description": "Deze kap stelt de drager in staat zich in de schaduw te verbergen.",
+        "link": "#kappen-schaduwen-details"
+    },
+    {
+        "name": "Ring van Onzichtbaarheid",
+        "description": "Maakt de drager tijdelijk onzichtbaar.",
+        "link": "#ring-onzichtbaarheid-details"
+    },
+    {
+        "name": "Toverstaf van Magie",
+        "description": "Een staf die de kracht heeft om magische spreuken te versterken.",
+        "link": "#toverstaf-magic-details"
+    },
+    {
+        "name": "Gouden Schild",
+        "description": "Een stevig schild dat de drager tegen bijna elke aanval beschermt.",
+        "link": "#gouden-schild-details"
+    }
+]

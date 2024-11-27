@@ -9,6 +9,9 @@ body {
 a {
     text-decoration: none;
 }
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section {
+    display: block
+}
 :root {
     --color_light_green: #a6b477;
     --color_light_green_sand: #d4d3b6;
@@ -50,7 +53,7 @@ a {
     --color-shadow-1: rgba(20, 20, 20, 0.05);
     --color-bg-page: #2a2928;
     --color-bg-page-gradient: rgba(42, 41, 40, 0.9);
-    --image-bg-page: url("C:\Users\Mkopy\Documents\dndnl\images\bg_dark_.png");
+    --image-bg-page: url("images\bg_dark_.png");
     --color-bg-1: #141414;
     --color-bg-2: #212121;
     --color-bg-3: #262626;
@@ -404,6 +407,105 @@ footer a:hover {
 .cont {
     background-color:var(--block-background-dark);
 }
+.block.block_100,.cont {
+    width: 100%
+}
+.block {
+    padding: 0 4px 8px;
+    flex: 0 1 auto
+}
+.block,.card__footer li {
+    order: 0;
+    align-self: auto
+}
+
+menu,ol,ul {
+    list-style: none
+}
+.cards-wrapper:not(:last-child) {
+    margin-bottom: 8px
+}
+
+.cards-wrapper .card {
+    display: none
+}
+
+.cards-wrapper .card.active {
+    display: block
+}
+
+.card-wrapper {
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 4px;
+    z-index: 2
+}
+
+.card-wrapper .card__top {
+    padding: 4px 8px;
+    background: var(--color-yellow-fade-1);
+    border-bottom: 1px solid rgba(20,20,20,.05);
+    border-radius: 4px 4px 0 0;
+    color: var(--color-gray);
+    font-weight: 500;
+    text-align: right;
+    font-size: 12px
+}
+
+.card-wrapper .card__header {
+    display: flex;
+    padding: 8px;
+    margin-bottom: -10px
+}
+
+.card-wrapper .card__header .card-title {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    font-weight: 600
+}
+
+.card-wrapper .card__header .card-title a {
+    color: inherit
+}
+
+.card-wrapper .card__header .card-title .source-plaque {
+    font-size: 12px;
+    font-weight: 500;
+    font-style: italic;
+    border-top: 1px dashed grey;
+    border-bottom: 1px dashed grey;
+    padding: 2px;
+    margin-left: 8px
+}
+
+.card-wrapper .card__body {
+    padding: 8px
+}
+
+.card-wrapper .card__body>:last-child {
+    margin-bottom: 0
+}
+
+.card-wrapper .card__footer {
+    margin-top: 8px;
+    border-top: 1px solid rgba(20,20,20,.05);
+    background: rgba(89,192,184,.1);
+    padding: 4px 8px;
+    display: flex;
+    justify-content: flex-end
+}
+
+.card-wrapper .card__footer:empty {
+    display: none
+}
+
+.card-wrapper .card__footer>* {
+    margin-left: 16px
+}
 nav {
     color: #d1d1d1; /* Светло-серый текст */
     font-family: Arial, sans-serif;
@@ -452,7 +554,7 @@ nav {
     padding: 4px 8px;
     border: 1px solid var(--color-border-1);
     border-radius: 4px;
-    background-color: var(--color-bg-4);
+    background-color: var(--color-bg-4-hover);
     position: relative;
     z-index: 2
 }

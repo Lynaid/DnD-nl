@@ -33,42 +33,71 @@
     --color-text-muted: #8f8f8f;
 }
 
-.random-spell-block {
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menu {
+    width: 200px;  /* Ширина левого меню */
+    background-color: var(--color-bg-page);
+}
+
+.main-panel {
+    flex-grow: 1; /* Центральная панель займет оставшееся пространство */
+    background-color: var(--color-bg-page-gradient);
+    padding: 20px;
+}
+
+.random-panel {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Расстояние между блоками */
+    width: 100%;
+}
+
+.random-spell-block, .random-item-block {
     background-color: var(--block-background-dark);
     color: var(--color-text-primary);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    width: 300px;
-    margin: 20px auto;
+    width: 48%;  /* Сужаем ширину для двух блоков рядом */
+    box-sizing: border-box;  /* Учитывает отступы и границы в расчетах ширины */
+    max-width: 400px;  /* Максимальная ширина блока */
     box-shadow: 0px 4px 8px var(--color-shadow-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 500px;  /* Максимальная высота блока */
+    overflow-y: auto;   /* Включаем вертикальную прокрутку, если контента слишком много */
 }
 
-.random-spell-block h2 {
+.random-spell-block h2, .random-item-block h2 {
     font-size: 1.5em;
     margin-bottom: 15px;
 }
 
-.spell-info {
-    margin: 15px 0;
+.spell-description, .item-description {
+    font-size: 0.9em;
+    color: var(--color-text-muted);
+    margin-bottom: 10px;  
+    line-height: 1.4;
+    flex-grow: 1;  /* Чтобы текст заполнял доступное пространство, но не растягивал блок */
+    overflow-wrap: break-word; /* Разрыв длинных слов, чтобы не было переноса за пределы */
 }
 
-.spell-link {
+.spell-link, .item-link {
     text-decoration: none;
     color: var(--color-link);
     font-weight: bold;
+    margin: 10px 0;  /* Отступ сверху и снизу для правильного расположения */
     transition: color 0.3s;
 }
 
-.spell-link:hover {
+.spell-link:hover, .item-link:hover {
     color: var(--color-yellow);
-}
-
-.spell-description {
-    font-size: 0.9em;
-    color: var(--color-text-muted);
-    margin-bottom: 15px;
-    line-height: 1.4;
 }
 
 button {
@@ -79,6 +108,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px; /* Чтобы кнопка не слипалась с текстом */
 }
 
 button:hover {
@@ -86,206 +116,45 @@ button:hover {
     color: var(--color-button-text-hover);
 }
 
-:root {
-    --color_light_green: #a6b477;
-    --color_light_green_sand: #d4d3b6;
-    --page-background: #141414;
-    --block-background-dark: #262626;
-    --color-sand: #ece4d9;
-    --color-red: #da2d2d;
-    --color-green: #6d8d26;
-    --color-yellow: #FFA500;
-    --color-mint: #59C0B8;
-    --color-pink: #FF517B;
-    --color-purple: #B960E3;
-    --color-blue: #1775b7;
-    --color-orange: #FF8F51;
-    --color-dark: #141414;
-    --color-light: #fff;
-    --color-gray: #8f8f8f;
-    --color-maroon: #58190e;
-    --color-tech-1: rgba(236, 228, 217, 0.4);
-    --color-tech-2: rgba(236, 228, 217, 0.1);
-    --color-tech-3: rgba(143, 143, 143, 0.9);
-    --image-tech-1: repeating-linear-gradient(45deg, rgba(0, 0, 0, .2) 0, rgba(0, 0, 0, .2) 0.4px, transparent 0, transparent 50%);
-    --color-link-1: #ece4d9;
-    --color-link-1-hover: #fdfcfb;
-    --color-link-2: #ece4d9;
-    --color-link-2-hover: #6d8d26;
-    --color-link-3: #ece4d9;
-    --color-link-3-hover: #fdfcfb;
-    --color-text-1: #ece4d9;
-    --color-text-2: #ece4d9;
-    --color-text-main: #141414;
-    --color-text-underline: rgba(20, 20, 20, 0.2);
-    --color-text-underline-active: rgba(20, 20, 20, 0.75);
-    --color-text-fade: #8f8f8f;
-    --color-text-title: #58190e;
-    --color-border-1: #3f3e3b;
-    --color-border-2: #d6cfc5;
-    --color-border-3: #c1bab2;
-    --color-shadow-1: rgba(20, 20, 20, 0.05);
-    --color-bg-page: #2a2928;
-    --color-bg-page-gradient: rgba(42, 41, 40, 0.9);
-    --image-bg-page: url("C:\Users\Mkopy\Documents\dndnl\images\bg_dark_.png");
-    --color-bg-1: #141414;
-    --color-bg-2: #212121;
-    --color-bg-3: #262626;
-    --color-bg-4: #2e2e2e;
-    --color-bg-4-hover: #3a3a3a;
-    --color-bg-veil: rgba(20, 20, 20, 0.85);
-    --color-button-text-1: #2e2e2e;
-    --color-button-text-1-hover: #212121;
-    --color-button-bg-default: #ece4d9;
-    --color-button-bg-primary-hover: #a6b477;
-    --color-input-bg: #e4d8c8;
-    --color-input-border-focus: #99ab65;
-    --color-button-bg-red: #c97b7b;
-    --color-button-bg-red-hover: #dd4847;
-    --color-button-bg-green: #98a678;
-    --color-button-bg-green-hover: #809a41;
-    --color-button-bg-yellow: #dab167;
-    --color-button-bg-yellow-hover: #fcae21;
-    --color-button-bg-mint: #8fbdba;
-    --color-button-bg-mint-hover: #6fc5bd;
-    --color-button-bg-orange: #daa78b;
-    --color-button-bg-orange-hover: #fc9c65;
-    --color-button-bg-gray: #a7a7a7;
-    --color-button-bg-gray-hover: #9d9c9a;
-    --color-button-bg-gray-hover: #707070;
-    --color-button-border: #c7c7c7;
-    --color-button-border-hover: #adadad;
-    --color-user-admin: #da2d2d;
-    --color-user-moder: #1775b7;
-    --comments-avatar-border: #f5f0ea;
-    --color-card-info-bg: #dde0d6;
-    --color-card-inner-border: rgba(20, 20, 20, 0.05);
-    --color-bg-alert-message: #f2cbb0;
-    --color-bg-alert-success: #c6caa3;
-    --color-bg-alert-error: #e7ada5;
-    --color-boosty: #F15F2C;
-    --color-discord: #7289da;
-    --color-yandex: #fc3f1d;
-    --color-vkontakte: #0077FF;
-    --color-telegram: #0088FF;
-    --color-red-fade-05: rgba(218, 45, 45, 0.05);
-    --color-green-fade-05: rgba(109, 141, 38, 0.05);
-    --color-yellow-fade-05: rgba(255, 165, 0, 0.05);
-    --color-mint-fade-05: rgba(89, 192, 184, 0.05);
-    --color-pink-fade-05: rgba(255, 81, 123, 0.05);
-    --color-purple-fade-05: rgba(185, 96, 227, 0.05);
-    --color-blue-fade-05: rgba(23, 117, 183, 0.05);
-    --color-orange-fade-05: rgba(255, 143, 81, 0.05);
-    --color-dark-fade-05: rgba(20, 20, 20, 0.05);
-    --color-gray-fade-05: rgba(143, 143, 143, 0.05);
-    --color-sand-fade-05: rgba(236, 228, 217, 0.05);
-    --color-white-fade-05: rgba(255, 255, 255, 0.05);
-    --color-red-fade-1: rgba(218, 45, 45, 0.1);
-    --color-green-fade-1: rgba(109, 141, 38, 0.1);
-    --color-yellow-fade-1: rgba(255, 165, 0, 0.1);
-    --color-mint-fade-1: rgba(89, 192, 184, 0.1);
-    --color-pink-fade-1: rgba(255, 81, 123, 0.1);
-    --color-purple-fade-1: rgba(185, 96, 227, 0.1);
-    --color-blue-fade-1: rgba(23, 117, 183, 0.1);
-    --color-orange-fade-1: rgba(255, 143, 81, 0.1);
-    --color-dark-fade-1: rgba(20, 20, 20, 0.1);
-    --color-gray-fade-1: rgba(143, 143, 143, 0.1);
-    --color-sand-fade-1: rgba(236, 228, 217, 0.1);
-    --color-white-fade-1: rgba(255, 255, 255, 0.1);
-    --color-red-fade-2: rgba(218, 45, 45, 0.2);
-    --color-green-fade-2: rgba(109, 141, 38, 0.2);
-    --color-yellow-fade-2: rgba(255, 165, 0, 0.2);
-    --color-mint-fade-2: rgba(89, 192, 184, 0.2);
-    --color-pink-fade-2: rgba(255, 81, 123, 0.2);
-    --color-purple-fade-2: rgba(185, 96, 227, 0.2);
-    --color-blue-fade-2: rgba(23, 117, 183, 0.2);
-    --color-orange-fade-2: rgba(255, 143, 81, 0.2);
-    --color-dark-fade-2: rgba(20, 20, 20, 0.2);
-    --color-gray-fade-2: rgba(143, 143, 143, 0.2);
-    --color-sand-fade-2: rgba(236, 228, 217, 0.2);
-    --color-white-fade-2: rgba(255, 255, 255, 0.2);
-    --color-red-fade-3: rgba(218, 45, 45, 0.3);
-    --color-green-fade-3: rgba(109, 141, 38, 0.3);
-    --color-yellow-fade-3: rgba(255, 165, 0, 0.3);
-    --color-mint-fade-3: rgba(89, 192, 184, 0.3);
-    --color-pink-fade-3: rgba(255, 81, 123, 0.3);
-    --color-purple-fade-3: rgba(185, 96, 227, 0.3);
-    --color-blue-fade-3: rgba(23, 117, 183, 0.3);
-    --color-orange-fade-3: rgba(255, 143, 81, 0.3);
-    --color-dark-fade-3: rgba(20, 20, 20, 0.3);
-    --color-gray-fade-3: rgba(143, 143, 143, 0.3);
-    --color-sand-fade-3: rgba(236, 228, 217, 0.3);
-    --color-white-fade-3: rgba(255, 255, 255, 0.3);
-    --color-red-fade-4: rgba(218, 45, 45, 0.4);
-    --color-green-fade-4: rgba(109, 141, 38, 0.4);
-    --color-yellow-fade-4: rgba(255, 165, 0, 0.4);
-    --color-mint-fade-4: rgba(89, 192, 184, 0.4);
-    --color-pink-fade-4: rgba(255, 81, 123, 0.4);
-    --color-purple-fade-4: rgba(185, 96, 227, 0.4);
-    --color-blue-fade-4: rgba(23, 117, 183, 0.4);
-    --color-orange-fade-4: rgba(255, 143, 81, 0.4);
-    --color-dark-fade-4: rgba(20, 20, 20, 0.4);
-    --color-gray-fade-4: rgba(143, 143, 143, 0.4);
-    --color-sand-fade-4: rgba(236, 228, 217, 0.4);
-    --color-white-fade-4: rgba(255, 255, 255, 0.4);
-    --color-red-fade-5: rgba(218, 45, 45, 0.5);
-    --color-green-fade-5: rgba(109, 141, 38, 0.5);
-    --color-yellow-fade-5: rgba(255, 165, 0, 0.5);
-    --color-mint-fade-5: rgba(89, 192, 184, 0.5);
-    --color-pink-fade-5: rgba(255, 81, 123, 0.5);
-    --color-purple-fade-5: rgba(185, 96, 227, 0.5);
-    --color-blue-fade-5: rgba(23, 117, 183, 0.5);
-    --color-orange-fade-5: rgba(255, 143, 81, 0.5);
-    --color-dark-fade-5: rgba(20, 20, 20, 0.5);
-    --color-gray-fade-5: rgba(143, 143, 143, 0.5);
-    --color-sand-fade-5: rgba(236, 228, 217, 0.5);
-    --color-white-fade-5: rgba(255, 255, 255, 0.5);
-    --color-red-fade-6: rgba(218, 45, 45, 0.6);
-    --color-green-fade-6: rgba(109, 141, 38, 0.6);
-    --color-yellow-fade-6: rgba(255, 165, 0, 0.6);
-    --color-mint-fade-6: rgba(89, 192, 184, 0.6);
-    --color-pink-fade-6: rgba(255, 81, 123, 0.6);
-    --color-purple-fade-6: rgba(185, 96, 227, 0.6);
-    --color-blue-fade-6: rgba(23, 117, 183, 0.6);
-    --color-orange-fade-6: rgba(255, 143, 81, 0.6);
-    --color-dark-fade-6: rgba(20, 20, 20, 0.6);
-    --color-gray-fade-6: rgba(143, 143, 143, 0.6);
-    --color-sand-fade-6: rgba(236, 228, 217, 0.6);
-    --color-white-fade-6: rgba(255, 255, 255, 0.6);
-    --color-red-fade-7: rgba(218, 45, 45, 0.7);
-    --color-green-fade-7: rgba(109, 141, 38, 0.7);
-    --color-yellow-fade-7: rgba(255, 165, 0, 0.7);
-    --color-mint-fade-7: rgba(89, 192, 184, 0.7);
-    --color-pink-fade-7: rgba(255, 81, 123, 0.7);
-    --color-purple-fade-7: rgba(185, 96, 227, 0.7);
-    --color-blue-fade-7: rgba(23, 117, 183, 0.7);
-    --color-orange-fade-7: rgba(255, 143, 81, 0.7);
-    --color-dark-fade-7: rgba(20, 20, 20, 0.7);
-    --color-gray-fade-7: rgba(143, 143, 143, 0.7);
-    --color-sand-fade-7: rgba(236, 228, 217, 0.7);
-    --color-white-fade-7: rgba(255, 255, 255, 0.7);
-    --color-red-fade-8: rgba(218, 45, 45, 0.8);
-    --color-green-fade-8: rgba(109, 141, 38, 0.8);
-    --color-yellow-fade-8: rgba(255, 165, 0, 0.8);
-    --color-mint-fade-8: rgba(89, 192, 184, 0.8);
-    --color-pink-fade-8: rgba(255, 81, 123, 0.8);
-    --color-purple-fade-8: rgba(185, 96, 227, 0.8);
-    --color-blue-fade-8: rgba(23, 117, 183, 0.8);
-    --color-orange-fade-8: rgba(255, 143, 81, 0.8);
-    --color-dark-fade-8: rgba(20, 20, 20, 0.8);
-    --color-gray-fade-8: rgba(143, 143, 143, 0.8);
-    --color-sand-fade-8: rgba(236, 228, 217, 0.8);
-    --color-white-fade-8: rgba(255, 255, 255, 0.8);
-    --color-red-fade-9: rgba(218, 45, 45, 0.9);
-    --color-green-fade-9: rgba(109, 141, 38, 0.9);
-    --color-yellow-fade-9: rgba(255, 165, 0, 0.9);
-    --color-mint-fade-9: rgba(89, 192, 184, 0.9);
-    --color-pink-fade-9: rgba(255, 81, 123, 0.9);
-    --color-purple-fade-9: rgba(185, 96, 227, 0.9);
-    --color-blue-fade-9: rgba(23, 117, 183, 0.9);
-    --color-orange-fade-9: rgba(255, 143, 81, 0.9);
-    --color-dark-fade-9: rgba(20, 20, 20, 0.9);
-    --color-gray-fade-9: rgba(143, 143, 143, 0.9);
-    --color-sand-fade-9: rgba(236, 228, 217, 0.9);
-    --color-white-fade-9: rgba(255, 255, 255, 0.9)
+/* Дополнительные стили для карточек */
+.card {
+    padding: 0;
+    margin: 0 0 8px;
+    z-index: 2;
 }
+
+.paper-1 {
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.section-title {
+    font-size: 24px;
+    padding: 0 0 8px;
+    line-height: 1;
+    color: var(--color-sand);
+}
+
+.paper-1 {
+    background-color: var(--color-sand);
+}
+
+/* Отступы для блоков */
+.block.block_100, .cont {
+    width: 150%;
+}
+
+.block {
+    padding: 0 4px 8px;
+    flex: 0 1 auto;
+}
+
+.block, .card__footer li {
+    order: 0;
+    align-self: auto;
+}
+
+menu, ol, ul {
+    list-style: none;
+}
+

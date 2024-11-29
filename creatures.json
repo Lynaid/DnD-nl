@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Unicorn",
+        "description": "A mythical creature symbolizing purity and grace.",
+        "link": "#"
+    },
+    {
+        "name": "Werewolf",
+        "description": "A human that transforms into a wolf during the full moon.",
+        "link": "#"
+    },
+    {
+        "name": "Kraken",
+        "description": "A giant sea monster that terrorizes sailors.",
+        "link": "#"
+    },
+    {
+        "name": "Dragon",
+        "description": "A legendary creature known for its massive wings, fiery breath, and immense power.",
+        "link": "#"
+    },
+    {
+        "name": "Goblin",
+        "description": "A small, mischievous humanoid creature often found in caves or dark forests.",
+        "link": "#"
+    },
+    {
+        "name": "Phoenix",
+        "description": "A mystical bird that rises from its own ashes, symbolizing renewal and immortality.",
+        "link": "#"
+    },
+    {
+        "name": "Griffin",
+        "description": "A majestic creature with the body of a lion and the wings and head of an eagle.",
+        "link": "#"
+    },
+    {
+        "name": "Banshee",
+        "description": "A spectral figure whose mournful wail is said to foretell death.",
+        "link": "#"
+    }
+]

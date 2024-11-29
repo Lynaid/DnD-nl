@@ -1,10 +1,12 @@
+
 body {
     font-family: "Arial", sans-serif;
     font-size: 15px;
     line-height: 1.4;
     font-weight: 400;
     color: var(--color-text-main);
-    color: var(--image-bg-page);
+    margin: 0;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -215,6 +217,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
     --color-sand-fade-9: rgba(236, 228, 217, 0.9);
     --color-white-fade-9: rgba(255, 255, 255, 0.9)
 }
+main{
+    background-color:var(--block-background-dark);
+}
 body {
     background-color: var(--color-bg-page)
 }
@@ -227,8 +232,6 @@ body.overflowed {
 body:before {
     content: "";
     display: block;
-    background-color: var(--color-bg-page);
-    background-image: var(--image-bg-page);
     background-size: cover;
     background-attachment: fixed;
     background-position: 0 50%;
@@ -262,7 +265,9 @@ body:after {
 .wrapper {
     max-width: 1596px;
     padding: 0 8px;
-    margin: 0 auto
+    margin: 0 auto;
+    grid-template-rows: auto 1fr auto;
+    
 }
 
 header {
@@ -606,31 +611,6 @@ body.overflowed {
     height: 100vh
 }
 
-body:before {
-    content: "";
-    display: block;
-    background-color: var(--color-bg-page);
-    background-image: var(--image-bg-page);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 0 50%;
-    background-repeat: no-repeat;
-    position: fixed;
-    z-index: -1;
-    width: 100%;
-    height: 100%
-}
-
-body:after {
-    content: "";
-    display: block;
-    position: fixed;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg,transparent 0,var(--color-bg-page-gradient) 9%,var(--color-bg-page-gradient) 91%,transparent 100%)
-}
-
 @media (max-width: 992px) {
     body {
         padding-top:41px
@@ -691,6 +671,42 @@ body:after {
 
 #search-button:hover .svg {
     fill: #ffffff;
+}
+.center {
+    order: 0;
+    position: relative
+}
+
+.center {
+    flex: 0 1 calc(100% - 238px);
+    align-self: stretch;
+    padding: 8px 0;
+    max-width: calc(100% - 238px)
+}
+
+@media (max-width: 992px) {
+    .center {
+        max-width:100%
+    }
+}
+.row {
+    display: flex!important;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100%
+}
+.block-page_title {
+    display: none
+}
+
+.block {
+    padding: 0 4px 8px;
+    flex: 0 1 auto
+}
+.center-page_title {
+    font-size: 18px;
+    color: var(--color-text-2);
+    font-weight: 400
 }
 
 .svg {

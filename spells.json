@@ -48,15 +48,15 @@
     "description": "Een golf van gemengde energieën (vuur, water, lucht, aarde) raakt meerdere vijanden tegelijk.",
     "link": "#"
   },
-    {
-        "name": "Vlammen Werpen",
-        "description": "Richt een krachtige vlamstraal die vijanden verbrandt.",
-        "link": "#"
-    },
-    {
-        "name": "Helende Lichtstraal",
-        "description": "Herstelt gezondheid van een bondgenoot in nood.",
-        "link": "#"
-    }
+  {
+   "name": "Vlammen Werpen",
+   "description": "Richt een krachtige vlamstraal die vijanden verbrandt.",
+   "link": "#"
+  },
+  {
+    "name": "Helende Lichtstraal",
+    "description": "Herstelt gezondheid van een bondgenoot in nood.",
+    "link": "#"
+  }
     
 ]

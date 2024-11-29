@@ -37,6 +37,7 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    min-height: 100%; /* Контейнер заполняет всю высоту */
 }
 
 .menu {
@@ -57,7 +58,7 @@
     width: 100%;
 }
 
-.random-spell-block, .random-item-block {
+.random-spell-block, .random-item-block, .random-creature-block {
     background-color: var(--block-background-dark);
     color: var(--color-text-primary);
     padding: 20px;
@@ -74,12 +75,12 @@
     overflow-y: auto;   /* Включаем вертикальную прокрутку, если контента слишком много */
 }
 
-.random-spell-block h2, .random-item-block h2 {
+.random-spell-block h2, .random-item-block h2, .random-creature-block h2 {
     font-size: 1.5em;
     margin-bottom: 15px;
 }
 
-.spell-description, .item-description {
+.spell-description, .item-description, .creature-description {
     font-size: 0.9em;
     color: var(--color-text-muted);
     margin-bottom: 10px;  
@@ -88,7 +89,7 @@
     overflow-wrap: break-word; /* Разрыв длинных слов, чтобы не было переноса за пределы */
 }
 
-.spell-link, .item-link {
+.spell-link, .item-link, .creature-link {
     text-decoration: none;
     color: var(--color-link);
     font-weight: bold;
@@ -96,7 +97,7 @@
     transition: color 0.3s;
 }
 
-.spell-link:hover, .item-link:hover {
+.spell-link:hover, .item-link:hover, .creature-link:hover {
     color: var(--color-yellow);
 }
 
@@ -141,7 +142,7 @@ button:hover {
 
 /* Отступы для блоков */
 .block.block_100, .cont {
-    width: 150%;
+    width: 100%;
 }
 
 .block {

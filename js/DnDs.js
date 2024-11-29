@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Изменить иконку на активную
                 if (svgIcon) {
-                    svgIcon.setAttribute("xlink:href", "images\chevron-up-svgrepo-com.svg"); // Новая иконка
+                    svgIcon.setAttribute("xlink:href", "images/chevron-up-svgrepo-com.svg"); // Новая иконка
                 }
             }
         });

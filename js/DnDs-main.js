@@ -53,3 +53,30 @@ async function generateItem() {
     itemBlock.querySelector(".item-description").textContent = randomItem.description;
     itemBlock.querySelector(".item-link").href = randomItem.link;
 }
+async function loadCreatures() {
+    try {
+        const response = await fetch('creatures.json');
+        const creatures = await response.json();
+        return creatures;
+    } catch (error) {
+        console.error("Fout bij het laden van de wezens:", error);
+        return [];
+    }
+}
+
+async function generateCreature() {
+    const creatureBlock = document.querySelector(".random-creature-block");
+    const creatures = await loadCreatures();
+
+    if (creatures.length === 0) {
+        creatureBlock.querySelector("h2").textContent = "Geen wezens beschikbaar";
+        creatureBlock.querySelector(".creature-description").textContent = "";
+        creatureBlock.querySelector(".creature-link").href = "#";
+        return;
+    }
+
+    const randomCreature = creatures[Math.floor(Math.random() * creatures.length)];
+    creatureBlock.querySelector("h2").textContent = randomCreature.name;
+    creatureBlock.querySelector(".creature-description").textContent = randomCreature.description;
+    creatureBlock.querySelector(".creature-link").href = randomCreature.link;
+}

@@ -1,62 +1,323 @@
-[{
-    "name": "Schaduwstorm",
-    "description": "Ontketent een woedende storm van donkere energie die vijanden verblindt en verwondt.",
-    "link": "#"
-  },
-  {
-    "name": "IJzige Grijp",
-    "description": "Bevries de vijand en vertraag hun beweging met een magische ijzeren greep.",
-    "link": "#"
-  },
-  {
-    "name": "Helende Waas",
-    "description": "Een mystieke nevel die langzaam bondgenoten geneest binnen een bereik.",
-    "link": "#"
-  },
-  {
-    "name": "Steenpantser",
-    "description": "Geeft je een versterkte verdediging, waardoor vijandelijke aanvallen minder effectief zijn.",
-    "link": "#"
-  },
-  {
-    "name": "Bliksemschicht",
-    "description": "Werp een directe bliksemschicht om vijanden te verlammen.",
-    "link": "#"
-  },
-  {
-    "name": "Druïdenwortel",
-    "description": "Roept magische wortels op die vijanden immobiliseren.",
-    "link": "#"
-  },
-  {
-    "name": "Illusieveld",
-    "description": "Verberg jezelf en bondgenoten tijdelijk door een optisch bedrog te creëren.",
-    "link": "#"
-  },
-  {
-    "name": "Vlamring",
-    "description": "Vorm een cirkel van vuur om je heen, die vijanden verbrandt als ze dichtbij komen.",
-    "link": "#"
-  },
-  {
-    "name": "Bloedbinding",
-    "description": "Leent kracht van een vijand in ruil voor je eigen gezondheid.",
-    "link": "#"
-  },
-  {
-    "name": "Elementale Golf",
-    "description": "Een golf van gemengde energieën (vuur, water, lucht, aarde) raakt meerdere vijanden tegelijk.",
-    "link": "#"
-  },
-  {
-   "name": "Vlammen Werpen",
-   "description": "Richt een krachtige vlamstraal die vijanden verbrandt.",
-   "link": "#"
-  },
-  {
-    "name": "Helende Lichtstraal",
-    "description": "Herstelt gezondheid van een bondgenoot in nood.",
-    "link": "#"
-  }
-    
-]
+{
+  "A": [
+    {
+      "name": "Aartsstralend Licht",
+      "level": 4,
+      "school": "evocation",
+      "components": "V, S",
+      "concentration": false,
+      "description": "A powerful light that can dazzle enemies.",
+      "link": "#"
+    },
+    {
+      "name": "Aartszondenstraal",
+      "level": 6,
+      "school": "necromancy",
+      "components": "V, S",
+      "concentration": false,
+      "description": "A ray of dark energy that damages and weakens foes.",
+      "link": "#"
+    },
+    {
+      "name": "Afkeer",
+      "level": 5,
+      "school": "abjuration",
+      "components": "V, S, M",
+      "concentration": false,
+      "description": "A protective spell that repels enemies.",
+      "link": "#"
+    },
+    {
+      "name": "Afsnijden",
+      "level": 3,
+      "school": "abjuration",
+      "components": "V, S",
+      "concentration": false,
+      "description": "A spell to sever connections or bonds.",
+      "link": "#"
+    },
+    {
+      "name": "Aardschok",
+      "level": 8,
+      "school": "evocation",
+      "components": "V, S",
+      "concentration": false,
+      "description": "A mighty earthquake that shakes the ground.",
+      "link": "#"
+    },
+    {
+      "name": "Aarden Vuist",
+      "level": 5,
+      "school": "evocation",
+      "components": "V, S, M",
+      "concentration": true,
+      "description": "A spell that creates a powerful earthen fist to strike opponents.",
+      "link": "#"
+    },
+    {
+      "name": "Afscheidszegen",
+      "level": 1,
+      "school": "enchantment",
+      "components": "V, S, M",
+      "concentration": true,
+      "description": "A blessing for those leaving on a journey.",
+      "link": "#"
+    },
+    {
+      "name": "Aarzelende Aanraking",
+      "level": 2,
+      "school": "enchantment",
+      "components": "V, S",
+      "concentration": true,
+      "description": "A touch that makes enemies hesitate and falter.",
+      "link": "#"
+    },
+    {
+      "name": "Allerbeste Onzichtbaarheid",
+      "level": 4,
+      "school": "illusion",
+      "components": "V, S",
+      "concentration": true,
+      "description": "A highly effective invisibility spell.",
+      "link": "#"
+    },
+    {
+      "name": "Afstraffing",
+      "level": 1,
+      "school": "necromancy",
+      "components": "V, S",
+      "concentration": false,
+      "description": "A spell that punishes a foe with necrotic damage.",
+      "link": "#"
+    },
+    {
+      "name": "Aardverschuiving",
+      "level": 3,
+      "school": "evocation",
+      "components": "V, S, M",
+      "concentration": false,
+      "description": "A spell that causes the earth to shift and alter its shape.",
+      "link": "#"
+    },
+    {
+      "name": "Afschuw",
+      "level": 3,
+      "school": "illusion",
+      "components": "V, S",
+      "concentration": true,
+      "description": "A terrifying illusion that causes fear in nearby creatures.",
+      "link": "#"
+    },
+    {
+      "name": "Aanschrijven",
+      "level": 2,
+      "school": "necromancy",
+      "components": "V, S, M",
+      "concentration": false,
+      "description": "A spell that curses an individual with negative effects.",
+      "link": "#"
+    },
+    {
+      "name": "Afweermagie",
+      "level": 3,
+      "school": "abjuration",
+      "components": "V",
+      "concentration": false,
+      "description": "A protective shield against magical effects.",
+      "link": "#"
+    },
+    {
+      "name": "Astrale Projectie",
+      "level": 9,
+      "school": "necromancy",
+      "components": "V, S, M",
+      "concentration": true,
+      "description": "Allows the caster's spirit to leave their body and travel in the astral plane.",
+      "link": "#"
+    },
+    {
+      "name": "Afschrikking",
+      "level": 1,
+      "school": "necromancy",
+      "components": "V, S",
+      "concentration": true,
+      "description": "A spell that instills fear in a target, causing them to flee.",
+      "link": "#"
+    },
+    {
+      "name": "Afschuwelijke Vlammen",
+      "level": 5,
+      "school": "evocation",
+      "components": "V, S, M",
+      "concentration": false,
+      "description": "A burst of destructive fire that burns everything in its path.",
+      "link": "#"
+    },
+    {
+      "name": "Afstoten",
+      "level": 2,
+      "school": "abjuration",
+      "components": "V, S",
+      "concentration": false,
+      "description": "A push spell that repels creatures away from the caster.",
+      "link": "#"
+    },
+    {
+      "name": "Aasfout",
+      "level": 3,
+      "school": "necromancy",
+      "components": "V, S, M",
+      "concentration": false,
+      "description": "A necromantic curse that causes severe corruption.",
+      "link": "#"
+    },
+    {
+      "name": "Amulet van Bescherming",
+      "level": 1,
+      "school": "abjuration",
+      "components": "V, S",
+      "concentration": true,
+      "description": "A protective amulet that defends against harm.",
+      "link": "#"
+    },
+    {
+      "name": "Afweermagie",
+      "level": 1,
+      "school": "abjuration",
+      "components": "V, S",
+      "concentration": false,
+      "description": "A spell that defends against incoming attacks.",
+      "link": "#"
+    },
+    {
+      "name": "Afschrikking",
+      "level": 1,
+      "school": "enchantment",
+      "components": "V, S",
+      "concentration": true,
+      "description": "A spell that causes fear in a target.",
+      "link": "#"
+    },
+    {
+      "name": "Afscherming",
+      "level": 1,
+      "school": "abjuration",
+      "components": "V, S, M",
+      "concentration": true,
+      "description": "A spell that provides a protective shield against damage.",
+      "link": "#"
+    }
+  ],
+  "B": [
+    {
+      "name": "Blaast",
+      "level": 1,
+      "school": "evocation",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "description": "A small gust of wind that can push or move objects.",
+      "link": "#"
+    },
+    {
+      "name": "Brandend Handen",
+      "level": 1,
+      "school": "evocation",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "description": "A spell that creates a burning sensation in the hands.",
+      "link": "#"
+    },
+    {
+      "name": "Bliksemstraal",
+      "level": 3,
+      "school": "evocation",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "description": "A lightning bolt that strikes a target with intense force.",
+      "link": "#"
+    },
+    {
+      "name": "Blink",
+      "level": 3,
+      "school": "transmutation",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "description": "A spell that allows the caster to blink short distances.",
+      "link": "#"
+    },
+    {
+      "name": "Beroering",
+      "level": 4,
+      "school": "evocation",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "description": "A spell that creates a disruptive force in the air.",
+      "link": "#"
+    },
+    {
+      "name": "Bendigeer",
+      "level": 6,
+      "school": "enchantment",
+      "components": "V, S",
+      "concentration": true,
+      "ritual": false,
+      "description": "A spell that bends the will of a target, making them obey commands.",
+      "link": "#"
+    },
+    {
+      "name": "Bestraling",
+      "level": 2,
+      "school": "evocation",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "description": "A radiant beam of energy that damages enemies.",
+      "link": "#"
+    },
+    {
+      "name": "Bescherming tegen Kwaad en Goed",
+      "level": 1,
+      "school": "abjuration",
+      "components": "V, S",
+      "concentration": true,
+      "ritual": false,
+      "description": "A protective spell that shields against evil and good forces.",
+      "link": "#"
+    },
+    {
+      "name": "Betovering",
+      "level": 4,
+      "school": "enchantment",
+      "components": "V, S",
+      "concentration": true,
+      "ritual": false,
+      "description": "A charm that makes a target more susceptible to influence.",
+      "link": "#"
+    },
+    {
+      "name": "Blinde Vlekken",
+      "level": 2,
+      "school": "divination",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "description": "A spell that creates blind spots in the target's perception.",
+      "link": "#"
+    },
+    {
+      "name": "Bezieling",
+      "level": 3,
+      "school": "necromancy",
+      "components": "V, S",
+      "concentration": true,
+      "ritual": false,
+      "description": "A necromantic spell that invigorates the spirit of the dead.",
+      "link": "#"
+    }
+  ]
+}

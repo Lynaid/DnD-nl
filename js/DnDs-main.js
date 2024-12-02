@@ -24,18 +24,21 @@ async function generateSpell() {
     const spellBlock = document.querySelector(".random-spell-block");
     const spells = await loadSpells();
 
-    if (spells.length === 0) {
+    const allSpells = spells.A || [];
+
+    if (allSpells.length === 0) {
         spellBlock.querySelector("h2").textContent = "Geen spreuken beschikbaar";
         spellBlock.querySelector(".spell-description").textContent = "";
         spellBlock.querySelector(".spell-link").href = "#";
         return;
     }
 
-    const randomSpell = spells[Math.floor(Math.random() * spells.length)];
+    const randomSpell = allSpells[Math.floor(Math.random() * allSpells.length)];
     spellBlock.querySelector("h2").textContent = randomSpell.name;
     spellBlock.querySelector(".spell-description").textContent = randomSpell.description;
     spellBlock.querySelector(".spell-link").href = randomSpell.link;
 }
+
 
 async function generateItem() {
     const itemBlock = document.querySelector(".random-item-block");

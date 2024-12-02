@@ -296,7 +296,7 @@ menu, ol, ul {
     z-index: 2
 }
 .card-wrapper .card__body {
-    padding: 8px
+    padding: 4px
 }
 .card-more,.card__body {
     width: 100%

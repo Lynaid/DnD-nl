@@ -24,7 +24,10 @@ async function generateSpell() {
     const spellBlock = document.querySelector(".random-spell-block");
     const spells = await loadSpells();
 
-    const allSpells = spells.A || [];
+    let allSpells = [];
+    Object.keys(spells).forEach(letter => {
+        allSpells = allSpells.concat(spells[letter]);
+    });
 
     if (allSpells.length === 0) {
         spellBlock.querySelector("h2").textContent = "Geen spreuken beschikbaar";

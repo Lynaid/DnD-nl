@@ -9,7 +9,8 @@ fetch('spells.json')
             // Проходим по всем алфавитным категориям
             for (let key in data) {
                 if (data.hasOwnProperty(key)) {
-                    const sectionSpells = data[key];
+                    // Сортируем заклинания по уровню
+                    const sectionSpells = data[key].sort((a, b) => a.level - b.level);
 
                     // Создаем блок для текущей буквы
                     const sectionWrapper = document.createElement('li');
@@ -31,7 +32,7 @@ fetch('spells.json')
                         
                         // Формируем HTML для заклинания
                         spellElement.innerHTML = `
-                            <a class="cards_list__item-wrapper" href="/spells/${spell.name.toLowerCase().replace(/\s+/g, '-')}/">
+                            <a class="cards_list__item-wrapper" href="/speuken/${spell.name.toLowerCase().replace(/\s+/g, '-')}.html">
                                 <span class="cards_list__item-prefix" title="${spell.level} niveau">[<span>${spell.level}</span>]</span>
                                 <span class="cards_list__item-icon" title="${spell.school}">
                                     <span class="svg svg-16 svg--spell_school_${spell.school}">
@@ -40,6 +41,7 @@ fetch('spells.json')
                                 </span>
                                 <span class="cards_list__item-name">${spell.name}</span>
                                 ${spell.concentration ? `<span class="cards_list__item-tag concentration" title="Concentratie">C</span>` : ''}
+                                ${spell.ritual ? `<span class="cards_list__item-tag ritual" title="Ritueel">R</span>` : ''}
                                 <span class="cards_list__item-suffix">${spell.components}</span>
                             </a>
                         `;
@@ -57,3 +59,4 @@ fetch('spells.json')
         renderSpells();
     })
     .catch(error => console.error('Ошибка загрузки данных:', error));
+

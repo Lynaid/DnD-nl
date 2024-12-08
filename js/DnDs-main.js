@@ -24,6 +24,7 @@ async function generateSpell() {
     const spellBlock = document.querySelector(".random-spell-block");
     const spells = await loadSpells();
 
+    // chatgpd help
     let allSpells = [];
     Object.keys(spells).forEach(letter => {
         allSpells = allSpells.concat(spells[letter]);

@@ -1058,7 +1058,8 @@
       "components": "VS.",
       "concentration": true,
       "ritual": false,
-      "description": "Je roept een hond die je helpt bij het vinden van voorwerpen of mensen."
+      "description": "Je roept een hond die je helpt bij het vinden van voorwerpen of mensen.",
+      "link": "#"
     },
     {
       "name": "Heilige lucht",
@@ -1067,7 +1068,9 @@
       "components": "VS.",
       "concentration": true,
       "ritual": false,
-      "description": "Je roept een heilige lucht om vijanden te verzwakken en je metgezellen te versterken."
+      "description": "Je roept een heilige lucht om vijanden te verzwakken en je metgezellen te versterken.",
+      "link": "#"
+
     },
     {
       "name": "Houten schild",
@@ -1434,6 +1437,11 @@
       "description": "Je markeert een doelwit, waardoor je het beter kunt volgen en het kwetsbaarder wordt voor je aanvallen."
     },
     {
+      "name": "Jordi",
+      "description": "easter egg voor onze leraar))",
+      "link": "/speuken/index.html"
+    },
+    {
       "name": "Jim's gloeiende munt",
       "level": 1,
       "school": "illusion",
@@ -1537,27 +1545,835 @@
   ],  
   "L": [
     {
-
+      "name": "Luchtbel",
+      "level": 1,
+      "school": "conjuration",
+      "components": "VS.  ",
+      "concentration": false,
+      "ritual": false,
+      "description": "Je creëert een magische luchtbel rond je hoofd, waardoor je onder water kunt ademen."
+    },
+    {
+      "name": "Langzame vuurbal",
+      "level": 4,
+      "school": "evocation",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": false,
+      "description": "Een vuurbal die langzaam vliegt voordat deze ontploft, waardoor vijanden verrast worden."
+    },
+    {
+      "name": "Labyrint",
+      "level": 8,
+      "school": "conjuration",
+      "components": "VS.",
+      "concentration": true,
+      "ritual": false,
+      "description": "Je verbant een wezen naar een extra-dimensionaal labyrint waar het moet ontsnappen."
+    },
+    {
+      "name": "Lasso van bliksem",
+      "level": 2,
+      "school": "evocation",
+      "components": "VSM",
+      "concentration": true,
+      "ritual": false,
+      "description": "Je creëert een lasso van bliksem die een doelwit kan grijpen en schade veroorzaakt."
+    },
+    {
+      "name": "Levitatie",
+      "level": 2,
+      "school": "transmutation",
+      "components": "VSM",
+      "concentration": true,
+      "ritual": false,
+      "description": "Je laat een wezen of object in de lucht zweven, omhoog of omlaag bewegend."
+    },
+    {
+      "name": "Leomunds kleine hut",
+      "level": 3,
+      "school": "conjuration",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": true,
+      "description": "Je creëert een magische koepel die je en je bondgenoten beschermt tegen het weer."
+    },
+    {
+      "name": "Leomunds geheime kist",
+      "level": 4,
+      "school": "conjuration",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": false,
+      "description": "Je verstopt een kist in een andere dimensie en kunt deze later terugroepen."
+    },
+    {
+      "name": "Levensoverdracht",
+      "level": 3,
+      "school": "necromancy",
+      "components": "VS.",
+      "concentration": false,
+      "ritual": false,
+      "description": "Je offert je eigen levensenergie om een bondgenoot te genezen."
+    },
+    {
+      "name": "Lopen op de wind",
+      "level": 6,
+      "school": "transmutation",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": false,
+      "description": "Je verandert jezelf en bondgenoten in mistvormen die door de lucht kunnen reizen."
+    },
+    {
+      "name": "Lopen op water",
+      "level": 3,
+      "school": "transmutation",
+      "components": "VSM ",
+      "concentration": false,
+      "ritual": false,
+      "description": "Je geeft jezelf en bondgenoten de mogelijkheid om over water te lopen."
     }
   ],  
   "M": [
     {
-
+      "name": "Macht over de wateren",
+      "level": 5,
+      "school": "transmutation",
+      "components": "VSM",
+      "concentration": true,
+      "ritual": false,
+      "description": "Beheer en controleer waterstromen binnen een groot gebied, inclusief vloedgolven of beken.",
+      "link": "#"
+    },
+    {
+      "name": "Macht over vuur",
+      "level": 4,
+      "school": "transmutation",
+      "components": "VS.",
+      "concentration": true,
+      "ritual": false,
+      "description": "Beheers vlammen binnen een gekozen gebied, ze vergroten, verkleinen of verplaatsen.",
+      "link": "#"
+    },
+    {
+      "name": "Macht over het weer",
+      "level": 8,
+      "school": "transmutation",
+      "components": "VSM",
+      "concentration": true,
+      "ritual": false,
+      "description": "Manipuleer weersomstandigheden binnen een uitgestrekt gebied, inclusief stormen en helder weer.",
+      "link": "#"
+    },
+    {
+      "name": "Magische hand",
+      "level": 0,
+      "school": "conjuration",
+      "components": "VS.",
+      "concentration": false,
+      "ritual": false,
+      "description": "Roept een magische hand op die kleine voorwerpen kan manipuleren binnen 30 voet.",
+      "link": "#"
+    },
+    {
+      "name": "Magische raket",
+      "level": 1,
+      "school": "evocation",
+      "components": "VS.",
+      "concentration": false,
+      "ritual": false,
+      "description": "Creëert magische projectielen die automatisch doelwitten raken.",
+      "link": "#"
+    },
+    {
+      "name": "Magische mond",
+      "level": 2,
+      "school": "illusion",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": true,
+      "description": "Slaat een bericht op dat wordt afgespeeld bij een geactiveerde voorwaarde.",
+      "link": "#"
+    },
+    {
+      "name": "Magisch kasteel",
+      "level": 7,
+      "school": "conjuration",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": false,
+      "description": "Roept een groots, tijdelijk kasteel op dat volledig naar jouw wensen is ingericht.",
+      "link": "#"
+    },
+    {
+      "name": "Magische steen",
+      "level": 0,
+      "school": "transmutation",
+      "components": "VS.",
+      "concentration": false,
+      "ritual": false,
+      "description": "Betovert stenen om extra schade toe te brengen bij het gooien.",
+      "link": "#"
+    },
+    {
+      "name": "Magische pot",
+      "level": 4,
+      "school": "conjuration",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": false,
+      "description": "Roept een magische pot op die voedsel of water kan genereren.",
+      "link": "#"
+    },
+    {
+      "name": "Magiër pantser",
+      "level": 1,
+      "school": "abjuration",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": false,
+      "description": "Verleent een magische bescherming aan een wezen zonder harnas.",
+      "link": "#"
+    },
+    {
+      "name": "Maximiliaan's aarden greep",
+      "level": 2,
+      "school": "transmutation",
+      "components": "VSM",
+      "concentration": true,
+      "ritual": false,
+      "description": "Roept een grote hand van aarde op die een wezen vastgrijpt en immobiliseert.",
+      "link": "#"
+    },
+    {
+      "name": "Mordenkainen's kantoor",
+      "level": 7,
+      "school": "conjuration",
+      "components": "VSM)",
+      "concentration": false,
+      "ritual": false,
+      "description": "Roept een volledig ingericht kantoor op met alle benodigde middelen voor studie en werk.",
+      "link": "#"
+    },
+    {
+      "name": "Mes van een ramp",
+      "level": 5,
+      "school": "conjuration",
+      "components": "VS.",
+      "concentration": true,
+      "ritual": false,
+      "description": "Creëert een vlammend mes dat extra schade doet bij elke aanval.",
+      "link": "#"
+    },
+    {
+      "name": "Maanstraal",
+      "level": 2,
+      "school": "evocation",
+      "components": "VSM",
+      "concentration": true,
+      "ritual": false,
+      "description": "Produceert een straal van maanlicht die vijanden kan beschadigen en onzichtbaarheid opheft.",
+      "link": "#"
+    },
+    {
+      "name": "Magische poort",
+      "level": 9,
+      "school": "conjuration",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": false,
+      "description": "Creëert een permanente poort tussen twee locaties, waar ook ter wereld.",
+      "link": "#"
+    },
+    {
+      "name": "Magisch oog",
+      "level": 4,
+      "school": "divination",
+      "components": "VSM",
+      "concentration": true,
+      "ritual": false,
+      "description": "Creëert een onzichtbaar oog dat door jou wordt bestuurd en waarmee je op afstand kunt kijken.",
+      "link": "#"
+    },
+    {
+      "name": "Magische cirkel",
+      "level": 3,
+      "school": "abjuration",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": false,
+      "description": "Beschermt een gebied tegen buitenaardse wezens zoals demonen of elementalen.",
+      "link": "#"
+    },
+    {
+      "name": "Magisch wapen",
+      "level": 2,
+      "school": "transmutation",
+      "components": "VS.",
+      "concentration": true,
+      "ritual": false,
+      "description": "Verandert een normaal wapen in een magisch wapen met een bonus op aanvalsrollen en schade.",
+      "link": "#"
+    },
+    {
+      "name": "Melf's zuurpijl",
+      "level": 2,
+      "school": "evocation",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": false,
+      "description": "Lanceert een magische pijl van zuur die schade aanricht bij impact en in de volgende ronde.",
+      "link": "#"
+    },
+    {
+      "name": "Meteorenzwerm",
+      "level": 9,
+      "school": "evocation",
+      "components": "VS.",
+      "concentration": false,
+      "ritual": false,
+      "description": "Laat een reeks meteoren neerdalen die enorme schade veroorzaken in een groot gebied.",
+      "link": "#"
+    },
+    {
+      "name": "Mystieke lading",
+      "level": 3,
+      "school": "transmutation",
+      "components": "VS.",
+      "concentration": true,
+      "ritual": false,
+      "description": "Je voegt een magische energie toe aan een object, waardoor het krachtiger en effectiever wordt in gebruik.",
+      "link": "#"
+    },
+    {
+      "name": "Massa suggestie",
+      "level": 6,
+      "school": "enchantment",
+      "components": "V.M",
+      "concentration": true,
+      "ritual": false,
+      "description": "Je beïnvloedt de gedachten van meerdere wezens tegelijkertijd, waardoor ze een suggestie volgen.",
+      "link": "#"
+    },
+    {
+      "name": "Massa genezend woord",
+      "level": 3,
+      "school": "evocation",
+      "components": "V..",
+      "concentration": false,
+      "ritual": false,
+      "description": "Je spreekt een krachtig genezend woord dat meerdere wezens in de buurt geneest.",
+      "link": "#"
+    },
+    {
+      "name": "Massagenezing van wonden",
+      "level": 5,
+      "school": "evocation",
+      "components": "VS.",
+      "concentration": false,
+      "ritual": false,
+      "description": "Geneest meerdere wezens in de buurt van hun verwondingen en herstelt een groot deel van hun gezondheid.",
+      "link": "#"
+    },
+    {
+      "name": "Meerdere volledige genezingen",
+      "level": 7,
+      "school": "evocation",
+      "components": "VS.",
+      "concentration": false,
+      "ritual": false,
+      "description": "Geneest alle wonden van meerdere wezens binnen een groot bereik.",
+      "link": "#"
+    },
+    {
+      "name": "Meervoudige transformatie",
+      "level": 8,
+      "school": "transmutation",
+      "components": "VS.",
+      "concentration": true,
+      "ritual": false,
+      "description": "Verandert meerdere wezens of objecten tegelijkertijd in andere vormen of eigenschappen.",
+      "link": "#"
+    },
+    {
+      "name": "Machtig fort",
+      "level": 9,
+      "school": "abjuration",
+      "components": "VS.",
+      "concentration": false,
+      "ritual": false,
+      "description": "Roept een groot, magisch fort op dat bescherming biedt tegen alle vijanden.",
+      "link": "#"
+    },
+    {
+      "name": "Motiverende toespraak",
+      "level": 1,
+      "school": "enchantment",
+      "components": "V..",
+      "concentration": false,
+      "ritual": false,
+      "description": "Een inspirerende toespraak die de moed en kracht van bondgenoten verhoogt.",
+      "link": "#"
+    },
+    {
+      "name": "Magische barrière",
+      "level": 4,
+      "school": "abjuration",
+      "components": "VS.",
+      "concentration": true,
+      "ritual": false,
+      "description": "Een barrière van magische energie die bescherming biedt en vijanden afweert.",
+      "link": "#"
+    },
+    {
+      "name": "Machtswoord pijn",
+      "level": 6,
+      "school": "necromancy",
+      "components": "V..",
+      "concentration": false,
+      "ritual": false,
+      "description": "Een krachtig woord dat onmiddellijke pijn veroorzaakt bij een doelwit.",
+      "link": "#"
+    },
+    {
+      "name": "Machtswoord verdoven",
+      "level": 7,
+      "school": "enchantment",
+      "components": "V..",
+      "concentration": false,
+      "ritual": false,
+      "description": "Een krachtig woord dat een wezen verdooft en tijdelijk verlamt.",
+      "link": "#"
+    },
+    {
+      "name": "Machtswoord doden",
+      "level": 9,
+      "school": "necromancy",
+      "components": "V..",
+      "concentration": false,
+      "ritual": false,
+      "description": "Een ultiem krachtwoord dat een wezen met weinig gezondheid direct doodt.",
+      "link": "#"
+    },
+    {
+      "name": "Machtswoord genezen",
+      "level": 5,
+      "school": "evocation",
+      "components": "V..",
+      "concentration": false,
+      "ritual": false,
+      "description": "Een krachtig woord dat onmiddellijke genezing brengt aan een wezen.",
+      "link": "#"
+    },
+    {
+      "name": "Muur van winden",
+      "level": 3,
+      "school": "evocation",
+      "components": "VS.",
+      "concentration": true,
+      "ritual": false,
+      "description": "Creëert een muur van krachtige winden die vijanden afstoot en projectielen blokkeert.",
+      "link": "#"
+    },
+    {
+      "name": "Muur van bladen",
+      "level": 4,
+      "school": "evocation",
+      "components": "VS.",
+      "concentration": true,
+      "ritual": false,
+      "description": "Roept een muur van draaiende, scherpe bladen op die vijanden beschadigen.",
+      "link": "#"
+    },
+    {
+      "name": "Muur van licht",
+      "level": 5,
+      "school": "evocation",
+      "components": "VS.",
+      "concentration": true,
+      "ritual": false,
+      "description": "Een stralende muur van licht die vijanden verblindt en schaduwwezens schaadt.",
+      "link": "#"
+    },
+    {
+      "name": "Mysterieuze fata morgana",
+      "level": 4,
+      "school": "illusion",
+      "components": "VS.",
+      "concentration": true,
+      "ritual": false,
+      "description": "Creëert een realistisch ogende illusie die vijanden in verwarring brengt.",
+      "link": "#"
+    },
+    {
+      "name": "Mist wolk",
+      "level": 1,
+      "school": "conjuration",
+      "components": "VS.",
+      "concentration": true,
+      "ritual": false,
+      "description": "Roept een dichte mist op die het zicht in een gebied beperkt.",
+      "link": "#"
+    },
+    {
+      "name": "Mistige stap",
+      "level": 2,
+      "school": "conjuration",
+      "components": "V..",
+      "concentration": false,
+      "ritual": false,
+      "description": "Je teleporteert kortstondig naar een zichtbare plek binnen een beperkte afstand.",
+      "link": "#"
     }
   ],  
   "N": [
     {
-
+      "name": "Natyra's kattenkwaad",
+      "level": 2,
+      "school": "illusion",
+      "components": "VS.",
+      "concentration": true,
+      "ritual": false,
+      "description": "Creëert speelse en onvoorspelbare illusies die afleiding of verwarring veroorzaken.",
+      "link": "#"
+    },
+    {
+      "name": "Nystul's valse aura",
+      "level": 3,
+      "school": "illusion",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": true,
+      "description": "Wijzigt de magische aura van een object of persoon, waardoor het een andere aard krijgt voor detectie.",
+      "link": "#"
+    },
+    {
+      "name": "Niet-detectie",
+      "level": 3,
+      "school": "abjuration",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": true,
+      "description": "Beschermt een wezen of object tegen detectie door magische middelen.",
+      "link": "#"
     }
   ],  
   "O": [
     {
-
+      "name": "Opstanding",
+      "level": 5,
+      "school": "necromancy",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": false,
+      "description": "Brengt een wezen terug tot leven, mits het niet langer dan 100 jaar dood is geweest."
+    },
+    {
+      "name": "Opgestaan Lijk",
+      "level": 3,
+      "school": "necromancy",
+      "components": "VSM",
+      "concentration": true,
+      "ritual": false,
+      "description": "Animeert een skelet of zombie om je te dienen."
+    },
+    {
+      "name": "Onzichtbare letter",
+      "level": 1,
+      "school": "illusion",
+      "components": "VS.",
+      "concentration": false,
+      "ritual": false,
+      "description": "Maakt tekst onzichtbaar totdat aan bepaalde voorwaarden wordt voldaan."
+    },
+    {
+      "name": "Onzichtbaarheid",
+      "level": 2,
+      "school": "illusion",
+      "components": "VS.",
+      "concentration": true,
+      "ritual": false,
+      "description": "Maakt een wezen of object onzichtbaar totdat de spreuk eindigt."
+    },
+    {
+      "name": "Ongeziene dienaar",
+      "level": 1,
+      "school": "conjuration",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": true,
+      "description": "Creëert een onzichtbaar krachtveld dat eenvoudige taken uitvoert."
+    },
+    {
+      "name": "Onroerend voorwerp",
+      "level": 2,
+      "school": "transmutation",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": false,
+      "description": "Voorkomt dat een object wordt bewogen door kracht of magie."
+    },
+    {
+      "name": "Onvergankelijke overblijfselen",
+      "level": 6,
+      "school": "necromancy",
+      "components": "VSM",
+      "concentration": true,
+      "ritual": false,
+      "description": "Beschermt dode lichamen tegen verval of reanimatie."
+    },
+    {
+      "name": "Otto's onweerstaanbare dans",
+      "level": 6,
+      "school": "enchantment",
+      "components": "V..",
+      "concentration": true,
+      "ritual": false,
+      "description": "Forceert een wezen om te dansen, waardoor het zijn acties beperkt."
+    },
+    {
+      "name": "Onkwetsbaarheid",
+      "level": 9,
+      "school": "abjuration",
+      "components": "VSM",
+      "concentration": true,
+      "ritual": false,
+      "description": "Maakt je immuun voor alle schade gedurende de duur van de spreuk."
+    },
+    {
+      "name": "Otiluke's ijsbal",
+      "level": 4,
+      "school": "evocation",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": false,
+      "description": "Creëert een explosie van ijs die schade toebrengt aan vijanden in een straal."
+    },
+    {
+      "name": "Otiluke's veerkrachtige bol",
+      "level": 4,
+      "school": "evocation",
+      "components": "VSM",
+      "concentration": true,
+      "ritual": false,
+      "description": "Omhult een wezen of object in een bol die alle schade blokkeert."
+    },
+    {
+      "name": "Openen",
+      "level": 2,
+      "school": "transmutation",
+      "components": "VS.",
+      "concentration": false,
+      "ritual": true,
+      "description": "Opent een slot of verzegeld object met magische kracht."
+    },
+    {
+      "name": "Onderwaterademhaling",
+      "level": 3,
+      "school": "transmutation",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": true,
+      "description": "Staat tot tien wezens toe om onder water te ademen."
+    },
+    {
+      "name": "Onderwerp het beest",
+      "level": 4,
+      "school": "enchantment",
+      "components": "VS.",
+      "concentration": true,
+      "ritual": false,
+      "description": "Forceert een beest om je bevelen te gehoorzamen."
+    },
+    {
+      "name": "Onderwerp persoonlijkheid",
+      "level": 5,
+      "school": "enchantment",
+      "components": "VSM",
+      "concentration": true,
+      "ritual": false,
+      "description": "Controleert de acties van een humanoïde wezen."
+    },
+    {
+      "name": "Onderwerp monster",
+      "level": 8,
+      "school": "enchantment",
+      "components": "VSM",
+      "concentration": true,
+      "ritual": false,
+      "description": "Forceert een wezen naar keuze om al je bevelen te gehoorzamen."
+    },
+    {
+      "name": "Ochtendgloren",
+      "level": 5,
+      "school": "evocation",
+      "components": "VSM",
+      "concentration": true,
+      "ritual": false,
+      "description": "Creëert een stralende lichtstraal die vijanden verbrandt en genezing biedt aan bondgenoten."
     }
   ],  
   "P": [
     {
-
+      "name": "Profetische Droom",
+      "level": 5,
+      "school": "divination",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": false,
+      "description": "Geeft een visioen of profetie terwijl je slaapt.",
+      "link": "#"
+    },
+    {
+      "name": "Productie",
+      "level": 1,
+      "school": "transmutation",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": true,
+      "description": "Creëert een klein object of plantmateriaal.",
+      "link": "#"
+    },
+    {
+      "name": "Prijsvervorming",
+      "level": 2,
+      "school": "enchantment",
+      "components": "VS.",
+      "concentration": false,
+      "ritual": false,
+      "description": "Vervormt de perceptie van waarde van een object.",
+      "link": "#"
+    },
+    {
+      "name": "Polszak",
+      "level": 1,
+      "school": "conjuration",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": true,
+      "description": "Creëert een magische zak voor tijdelijk gebruik.",
+      "link": "#"
+    },
+    {
+      "name": "Primordiale Afdeling",
+      "level": 6,
+      "school": "conjuration",
+      "components": "VSM",
+      "concentration": true,
+      "ritual": false,
+      "description": "Open een poort naar een andere bestaanslaag.",
+      "link": "#"
+    },
+    {
+      "name": "Pyrotechniek",
+      "level": 2,
+      "school": "transmutation",
+      "components": "VS.",
+      "concentration": false,
+      "ritual": false,
+      "description": "Transformeert vuur in rook of schitterend licht.",
+      "link": "#"
+    },
+    {
+      "name": "Planaire Bond",
+      "level": 5,
+      "school": "conjuration",
+      "components": "VSM",
+      "concentration": true,
+      "ritual": false,
+      "description": "Creëert een link met een wezen uit een andere bestaanslaag.",
+      "link": "#"
+    },
+    {
+      "name": "Planaire Bondgenoot",
+      "level": 6,
+      "school": "conjuration",
+      "components": "VSM",
+      "concentration": true,
+      "ritual": false,
+      "description": "Roept een machtige bondgenoot uit een andere bestaanslaag op.",
+      "link": "#"
+    },
+    {
+      "name": "Postdier",
+      "level": 3,
+      "school": "conjuration",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": true,
+      "description": "Stuur een klein dier als boodschapper.",
+      "link": "#"
+    },
+    {
+      "name": "Phantom Ros",
+      "level": 4,
+      "school": "illusion",
+      "components": "VSM",
+      "concentration": true,
+      "ritual": false,
+      "description": "Creëert een illusie van een betoverende roos.",
+      "link": "#"
+    },
+    {
+      "name": "Projectie",
+      "level": 7,
+      "school": "necromancy",
+      "components": "VSM",
+      "concentration": true,
+      "ritual": false,
+      "description": "Projecteer je ziel naar een andere bestaanslaag.",
+      "link": "#"
+    },
+    {
+      "name": "Pseudoleven",
+      "level": 3,
+      "school": "necromancy",
+      "components": "VSM",
+      "concentration": true,
+      "ritual": false,
+      "description": "Vult een wezen met schijnbaar leven.",
+      "link": "#"
+    },
+    {
+      "name": "Psychische Schreeuw",
+      "level": 5,
+      "school": "enchantment",
+      "components": "VS.",
+      "concentration": true,
+      "ritual": false,
+      "description": "Laat een oorverdovende mentale schreeuw klinken.",
+      "link": "#"
+    },
+    {
+      "name": "Praat met Dieren",
+      "level": 1,
+      "school": "divination",
+      "components": "VS.",
+      "concentration": false,
+      "ritual": true,
+      "description": "Laat je communiceren met dieren.",
+      "link": "#"
+    },
+    {
+      "name": "Praat met Doden",
+      "level": 3,
+      "school": "necromancy",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": false,
+      "description": "Communiceer kort met een dood wezen.",
+      "link": "#"
+    },
+    {
+      "name": "Plantengroei",
+      "level": 3,
+      "school": "transmutation",
+      "components": "VS.",
+      "concentration": false,
+      "ritual": true,
+      "description": "Laat planten snel groeien of gebieden overwoekeren.",
+      "link": "#"
     }
   ],  
   "Q": [
@@ -1582,7 +2398,14 @@
   ],  
   "U": [
     {
-
+      "name": "Uitbarstende aarde",
+      "level": 3,
+      "school": "evocation",
+      "components": "VSM",
+      "concentration": false,
+      "ritual": false,
+      "description": "Je doet de grond binnen een bepaald gebied exploderen, waardoor vijanden schade oplopen en het terrein moeilijk begaanbaar wordt.",
+      "link": "#"
     }
   ],  
   "V": [

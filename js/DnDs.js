@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             document.querySelectorAll(".dropdown-list").forEach(el => (el.style.display = "none"));
 
+                // chatgpd help
             // Переключить текущее меню
             if (!isActive) {
                 trigger.classList.add("active");

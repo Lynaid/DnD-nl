@@ -279,10 +279,6 @@
     order: 0;
     align-self: auto;
 }
-
-menu, ol, ul {
-    list-style: none;
-}
 .row .card:last-of-type {
     margin-bottom: 0
 }

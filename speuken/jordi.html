@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simpleRPS - Rock, Paper and Scissors Game</title>
+    <meta name="author" content="Jordy Veenstra">
+    <meta name="description" content="JavaScript based RPS-game">
+    <meta name="keywords" content="game, rock paper scissors, rock, paper, scissors, javascript, browser game">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<main> 
+    <div class="flexbox">
+        <div class="result">
+            <p id="playerResult">YOU CHOSE <span id="choiceOne">PAPER</span></p>
+            <p id="cpuResult">THE CPU CHOSE <span id="choiceTwo">SCISSORS</span></p>
+            <p id="finalResult">Scissors <span id="verb">beats</span> paper</p>
+            <p id="outcome">You lose</p>
+            <button id="returnHome">Quit</button>
+            <button id="playAgain">Play</button>
+        </div>
+        <div id="choiceprompt">
+            <div id="prompt-choice">
+            <h1>Please make your choice</h1></div>
+            <button id="rock">ROCK</button>
+            <button id="paper">PAPER</button>
+            <button id="scissors">SCISSORS</button>
+        </div>
+        <div class="buttondiv">
+            <button id="startGame" type="submit">Let's play Rock, Paper, Scissors!</button>
+        </div>
+        <div id="srps-div">
+            <div class="srps-logo">SR<br>PS</div>
+        </div>
+        <div id="srps-tag">
+            <div class="srps-tag">Simple Rock, Paper, Scissors Game</div>
+        </div>
+        <div id="code-tag">
+            <div class="code-text">Coded by A Pixelated Point of View</div>
+        </div>
+    </div>
+    </div>
+    </main>
+        <script defer src="js/anime.min.js"></script>
+        <script defer src="js/game.js"></script>
+        <script defer src="js/animations.js"></script>
+</body>
+</html>

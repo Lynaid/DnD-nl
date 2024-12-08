@@ -21,7 +21,6 @@ fetch('spells.json')
                         <div class="cards_list__block-label">${key}</div>
                         <ul class="cards_list__block"></ul>
                     `;
-
                     // Список заклинаний для этой буквы
                     const sectionList = sectionWrapper.querySelector('.cards_list__block');
                     
@@ -29,7 +28,7 @@ fetch('spells.json')
                     sectionSpells.forEach(spell => {
                         const spellElement = document.createElement('li');
                         spellElement.classList.add('cards_list__item');
-                        
+
                         // Формируем HTML для заклинания
                         spellElement.innerHTML = `
                             <a class="cards_list__item-wrapper" href="/speuken/${spell.name.toLowerCase().replace(/\s+/g, '-')}.html">
@@ -45,16 +44,13 @@ fetch('spells.json')
                                 <span class="cards_list__item-suffix">${spell.components}</span>
                             </a>
                         `;
-
                         sectionList.appendChild(spellElement); // Добавляем заклинание в список
                     });
-
                     // Добавляем блок для буквы и заклинаний в основной список
                     listElement.appendChild(sectionWrapper);
                 }
             }
         };
-
         // Вызываем функцию для рендеринга
         renderSpells();
     })

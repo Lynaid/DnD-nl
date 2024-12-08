@@ -1,0 +1,396 @@
+/*Box Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #131313;
+  --yellow: #ffe500;
+  --white: #fafafa;
+  --off-white: #faf9f6;
+}
+
+.square-loader {
+  width: 25px;
+  height: 25px;
+  background-color: var(--yellow);
+  z-index: 3;
+  display: flex;
+  position: absolute;
+}
+
+body {
+  overflow: hidden;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--black);
+  position: relative;
+}
+
+.flexbox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttondiv {
+  width: 305px;
+  position: absolute;
+  margin-top: -2000px;
+}
+
+h1,
+h2 {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--yellow);
+  opacity: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#startGame {
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid var(--yellow);
+  background-color: transparent;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--yellow);
+  transition: 0.2s;
+}
+
+#startGame:hover {
+  border: 2px solid var(--black);
+  cursor: pointer;
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+#srps-div {
+  display: flex;
+  width: 110px;
+  height: 125px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.srps-logo {
+  color: var(--yellow);
+  font-family: Rubik;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 60px;
+  letter-spacing: -3px;
+}
+
+#srps-tag {
+  display: flex;
+}
+
+.srps-tag {
+  color: var(--yellow);
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 14px;
+  bottom: 50px;
+  right: 130px;
+  position: absolute;
+}
+
+.code-text {
+  color: var(--yellow);
+  font-family: Rubik;
+  font-weight: 100;
+  font-size: 10px;
+  bottom: 35px;
+  right: 130px;
+  position: absolute;
+}
+
+#choiceprompt {
+  opacity: 0;
+  margin-top: -40px;
+  margin-left: -15px;
+}
+
+#rock,
+#paper,
+#scissors {
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 3px;
+  border: 2px solid var(--yellow);
+  background-color: transparent;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--yellow);
+  transition: 0.2s;
+}
+
+#rock:hover,
+#paper:hover,
+#scissors:hover {
+  transform: scale(1.25);
+  border: 2px solid var(--black);
+  cursor: pointer;
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+#prompt-choice {
+  pointer-events: none;
+}
+
+.result {
+  position: absolute;
+  border: 2px solid var(--yellow);
+  width: 400px;
+  height: 220px;
+  align-items: center;
+  align-content: center;
+  margin-top: -2000px;
+}
+
+#playerResult {
+  color: var(--yellow);
+  font-family: Rubik;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+#cpuResult {
+  color: var(--yellow);
+  font-family: Rubik;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+#finalResult {
+  color: var(--yellow);
+  font-family: Rubik;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+#outcome {
+  color: var(--yellow);
+  font-family: Rubik;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+#choiceOne {
+  font-weight: 700;
+}
+
+#choiceTwo {
+  font-weight: 700;
+}
+
+#returnHome {
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 3px;
+  border: 2px solid var(--yellow);
+  background-color: transparent;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--yellow);
+  transition: 0.2s;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 80px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#playAgain {
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 3px;
+  border: 2px solid var(--yellow);
+  background-color: transparent;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--yellow);
+  transition: 0.2s;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+#returnHome:hover,
+#playAgain:hover {
+  transform: scale(1.25);
+  border: 2px solid var(--black);
+  cursor: pointer;
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+/* Phones with smaller resolutions such as the Samsung Fold*/
+@media screen and (max-width: 384px) and (max-height: 799px) and (orientation: portrait) {
+  .result {
+    width: 260px !important;
+  }
+
+  .srps-tag {
+    font-size: 10px !important;
+  }
+
+  .code-text {
+    right: 100px;
+    font-size: 8px !important;
+  }
+}
+
+/* Mainstream phones, such as samsung S/A lines, iPhones from 4, 5 till 12 pro*/
+@media screen and (max-width: 385px) and (max-height: 820px) and (orientation: portrait) {
+  #rock,
+  #paper,
+  #scissors {
+    margin: 3px;
+  }
+
+  .result {
+    width: 275px;
+    height: 210px;
+  }
+
+  #playAgain {
+    width: 75px;
+    height: 45px;
+    margin: 5px;
+    font-size: 16px;
+  }
+
+  #returnHome {
+    width: 75px;
+    height: 45px;
+    margin: 5px;
+    font-size: 16px;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+
+  #choiceprompt {
+    padding-left: 12px;
+  }
+
+  #startGame {
+    font-size: 12px;
+    width: 250px;
+  }
+
+  .buttondiv {
+    width: 255px;
+  }
+
+  .srps-logo {
+    font-size: 60px;
+    line-height: 45px;
+    letter-spacing: -3px;
+  }
+
+  #srps-div {
+    width: 82px;
+    height: 95px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  #srps-tag {
+    right: 100px;
+  }
+
+  .srps-tag {
+    right: 100px;
+    font-size: 12px;
+  }
+
+  .code-text {
+    right: 100px;
+    font-size: 10px;
+  }
+
+  #code-text {
+    right: 100px;
+  }
+
+  #playerResult {
+    font-size: 18px;
+  }
+
+  #cpuResult {
+    font-size: 18px;
+  }
+
+  #outcome {
+    font-size: 12px;
+  }
+
+  #finalResult {
+    font-size: 12px;
+  }
+}
+
+/* for Microsoft Lumia phones */
+@media screen and (orientation: landscape) and (max-width: 640px) and (max-height: 360px) {
+  .result {
+    width: 300px;
+    height: 210px;
+  }
+
+  #playAgain {
+    width: 75px;
+    height: 45px;
+    margin: 5px;
+    font-size: 16px;
+  }
+
+  #returnHome {
+    width: 75px;
+    height: 45px;
+    margin: 5px;
+    font-size: 16px;
+    margin-left: 65px;
+    margin-top: 20px;
+  }
+}
+
+/* For phones with high height-resolutions */
+@media screen and (orientation: portrait) and (min-width: 386px) and (max-height: 920px) {
+  .result {
+    width: 335px;
+  }
+
+  #returnHome {
+    margin-left: 50px;
+  }
+}

@@ -7,7 +7,7 @@ git clone https://github.com/Lynaid/DnD-nl
 Ga naar de map:
 
 bash
-cd projectnaam
+cd dndnl
 
 Open het HTML-bestand:
 Zoek naar DnD-main.html in de projectmap. Dubbelklik erop om het in je browser te openen.

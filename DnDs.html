@@ -101,5 +101,17 @@
         </div>
     </footer>
     <script src="js\DnDs.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const requestedPage = window.location.pathname;
+            fetch(requestedPage).then(response => {
+                if (!response.ok) {
+                    window.location.href = '/404.html';
+                }
+            }).catch(() => {
+                window.location.href = '/404.html';
+            });
+        });
+    </script>
 </body>
 </html>
